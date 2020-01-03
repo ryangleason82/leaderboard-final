@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Row, Col, Form, FormGroup, Label, Input, Button } from "reactstrap";
 export const InputForm = props => {
-  const { createLeaderboardArray } = props;
+  const { updateLeaderboardArray } = props;
   const initialInputState = { player: "", score: "" };
   const [eachEntry, setEachEntry] = useState(initialInputState);
   const { player, score } = eachEntry;
@@ -11,7 +11,7 @@ export const InputForm = props => {
   };
 
   const handleFinalSubmit = e => {
-    createLeaderboardArray(eachEntry);
+    updateLeaderboardArray(eachEntry);
   };
 
   return (

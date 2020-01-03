@@ -3,13 +3,13 @@ import { InputForm } from "./Components/InputForm";
 import { OutputLeaderboard } from "./Components/OutputLeaderboard";
 function App() {
   const [leaderboard, setLeaderboard] = useState([]);
-  const createLeaderboardArray = eachEntry => {
+  const updateLeaderboardArray = eachEntry => {
     setLeaderboard([...leaderboard, eachEntry]);
   };
 
   return (
     <div className="container mt-4">
-      <InputForm createLeaderboardArray={createLeaderboardArray} />
+      <InputForm updateLeaderboardArray={updateLeaderboardArray} />
       <OutputLeaderboard leaderboard={leaderboard} />
     </div>
   );
