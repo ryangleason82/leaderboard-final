@@ -18,7 +18,7 @@ export const InputForm = (props) => {
     <div>
       <Row>
         <Col sm="12" md={{ size: 6, offset: 3 }} className="text-center">
-          <h2>Leaderboard Serverless Edition</h2>
+          <h2>Serverless Edition Test Environment</h2>
         </Col>
       </Row>
       <Row className="mt-4">
