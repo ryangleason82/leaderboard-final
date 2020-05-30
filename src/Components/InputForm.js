@@ -1,16 +1,16 @@
 import React, { useState } from "react";
 import { Row, Col, Form, FormGroup, Label, Input, Button } from "reactstrap";
-export const InputForm = props => {
+export const InputForm = (props) => {
   const { updateLeaderboardArray } = props;
   const initialInputState = { player: "", score: "" };
   const [eachEntry, setEachEntry] = useState(initialInputState);
   const { player, score } = eachEntry;
 
-  const handleInputChange = e => {
+  const handleInputChange = (e) => {
     setEachEntry({ ...eachEntry, [e.target.name]: e.target.value });
   };
 
-  const handleFinalSubmit = e => {
+  const handleFinalSubmit = (e) => {
     updateLeaderboardArray(eachEntry);
   };
 
@@ -18,7 +18,7 @@ export const InputForm = props => {
     <div>
       <Row>
         <Col sm="12" md={{ size: 6, offset: 3 }} className="text-center">
-          <h2>Leaderboard</h2>
+          <h2>Leaderboard Serverless Edition</h2>
         </Col>
       </Row>
       <Row className="mt-4">
